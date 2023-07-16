@@ -14,13 +14,6 @@ let
     "2001:1608:10:25::1c04:b12f"
     "2001:1608:10:25::9249:d69b"
   ];
-
-  coreNetworkConf = {
-    networkConfig.DHCP = "yes";
-    dns = mainNameservers; # Should fallback to global (systemd-resolved) but just in-case :-)
-    dhcpV4Config.UseDNS = false; # config address only, don't use dns from dhcp server
-    dhcpV6Config.UseDNS = false; # config address only, don't use dns from dhcp server
-  };
 in {
   users.defaultUserShell = pkgs.zsh;
 
