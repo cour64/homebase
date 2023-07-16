@@ -12,13 +12,10 @@
       ../modules/nixos/dwm-de
     ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes"  ];
-
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "vm";
-  networking.networkmanager.enable = true;
 
   time.timeZone = "Europe/London";
 
@@ -29,7 +26,7 @@
 
   users.users.brendan = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" ];
   };
 
   system.stateVersion = "23.05";

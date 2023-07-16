@@ -34,7 +34,7 @@
     pavucontrol
   ];
 
-  services.gnome-keyring.enable = true;
+  services.gnome.gnome-keyring.enable = true;
   services.dbus.enable = true;
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];

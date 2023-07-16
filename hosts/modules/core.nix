@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  nix.settings.experimental-features = [ "nix-command" "flakes"  ];
+  
   environment.pathsToLink = [ "/share/zsh" ];
 
   environment.systemPackages = with pkgs; [
@@ -22,6 +24,7 @@
     bottom # replace top/htop
     zoxide # replaces cd
     gping # replace ping
+    dig # replace nslookup
   ];
 
   environment.shells = with pkgs; [ zsh bash dash ]; 
