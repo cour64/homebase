@@ -1,3 +1,0 @@
-[submodule "hosts/modules/nixos/dwm-de/dwm"]
-	path = hosts/modules/nixos/dwm-de/dwm
-	url = https://git.suckless.org/dwm
