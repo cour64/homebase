@@ -1,6 +1,15 @@
 { pkgs, ... }:
 
 {
+  # Patch dwm
+  nixpkgs.overlays = [
+    (self: super: {
+      dwm = super.dwm.override {
+	conf = ./dwm-config.h;
+      };
+    })
+  ];
+
   services.xserver.enable = true;
   services.xserver.desktopManager.xterm.enable = false;
   services.xserver.windowManager.dwm.enable = true;
