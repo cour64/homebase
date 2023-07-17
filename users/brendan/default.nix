@@ -37,8 +37,8 @@
     configFile = {
       alacritty = {
         enable = true;
-        source = ./alacritty.toml;
-	target = "alacritty/alacritty.toml";
+        source = ./alacritty.yaml;
+	target = "alacritty/alacritty.yml";
       };
     };
   };
