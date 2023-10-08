@@ -19,7 +19,7 @@
     broot # replaces tree
     procs # replaces ps
     bat # replaces cat
-    exa # replaces ls
+    eza # replaces ls
     duf # replaces du
     bottom # replace top/htop
     zoxide # replaces cd

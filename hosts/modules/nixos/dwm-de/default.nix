@@ -41,6 +41,7 @@
     dunst
     gnome.gnome-keyring
     pavucontrol
+    arandr
   ];
 
   services.gnome.gnome-keyring.enable = true;

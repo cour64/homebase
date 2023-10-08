@@ -21,7 +21,7 @@
     fzf
     broot # replaces tree
     bat # replaces cat
-    exa # replaces ls
+    eza # replaces ls
     bottom # replace top/htop
     zoxide # replaces cd
   ];
@@ -56,7 +56,7 @@
 
     gh = {
       enable = true;
-      enableGitCredentialHelper = true;
+      gitCredentialHelper.enable = true;
     };
 
     zsh = {
@@ -117,7 +117,7 @@
       # extraPackages = with pkgs; [ batdiff batman batgrep batwatch ];
     };
 
-    exa = {
+    eza = {
       enable = true;
       enableAliases = true;
       git = true;
@@ -141,7 +141,7 @@
     ripgrep.enable = true;
   };
 
-  home.stateVersion = "23.05";
+  home.stateVersion = "23.11";
 
   programs.home-manager.enable = true;
 }
